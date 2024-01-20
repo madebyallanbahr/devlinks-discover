@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Icons */
+  --iconLightMode: url("./assets/icon-moon.svg");
+  --iconDarkMode: url("./assets/icon-sun.svg");
+
+  --iconLightModeLinkedin: url("./assets/icon-linkedin.svg");
+  --iconLightModeInstagram: url("./assets/icon-instagram.svg");
+  --iconLightModeGithub: url("./assets/icon-github.svg");
+
+  --iconDarkModeLinkedin: url("./assets/icon-linkedin-dark.svg");
+  --iconDarkModeInstagram: url("./assets/icon-instagram-dark.svg");
+  --iconDarkModeGithub: url("./assets/icon-github-dark.svg");
+
+  /* Background */
+  --bgDesktopLightMode: url("./assets/bg-desktop-light.jpg");
+  --bgMobileLightMode: url("./assets/bg-mobile-light.jpg");
+  --bgDesktopDarkMode: url("./assets/bg-desktop.jpg");
+  --bgMobileDarkMode: url("./assets/bg-mobile.jpg");
+
+  /* Surface */
+  --surfaceColorDarkModeHover: ##ffffff0d;
+  --surfaceColorDarkMode: #ffffff1a;
+  --surfaceColorLightMode: #0000000d;
+  --surfaceColorLightModeHover: #00000005;
+
+  /* Text */
+  --textColorDarkMode: ##ffffff;
+  --textColorLightMode: #000000;
+
+  /* Stroke */
+  --strokeDarkMode: ##ffffff80;
+  --strokeLightMode: #00000080;
+
+  /* Highlight */
+  --highlightDarkMode: ##ffffff33;
+  --highlightLightMode: #0000001a;
+}
+body {
+  background-image: var(--bgMobileDarkMode);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+@media (min-width: 1400px) {
+  body {
+    background-image: var(--bgDesktopDarkMode);
+  }
+}
